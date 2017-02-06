@@ -13,8 +13,9 @@ func main() {
 
 func Register(w http.ResponseWriter, r *http.Request) {
 	r.ParseForm()
-	value := r.FormValue("user")
-	user := &User{Name: value}
+	name := r.FormValue("user")
+	email := r.FormValue("email")
+	user := &User{Name: name, Email: email}
 	t, err := template.ParseFiles("public/register.html")
 	if err != nil {
 		panic(err)
@@ -23,5 +24,6 @@ func Register(w http.ResponseWriter, r *http.Request) {
 }
 
 type User struct {
-	Name string
+	Name  string
+	Email string
 }

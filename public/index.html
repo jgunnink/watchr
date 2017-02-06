@@ -1,26 +1,31 @@
 <html>
   <head>
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/semantic.min.css" rel="stylesheet">
   </head>
   <body>
-    <div class="container">
+    <div class="ui container">
       <div class="page-title">
-        <h1>HR Monitoring Registration</h1>
-        <p class="lead">Create your account and get notified!</p>
-        <hr />
+        <h1 class="ui header">HR Monitoring Registration</h1>
+        <p>Create your account and get notified!</p>
+        <div class="ui divider"></div>
       </div>
 
       <form action="/register" method="POST">
-        <div class="form-group">
-          <label for="username">Enter your name:</label>
-          <input class="form-control" name="user" cols="30" rows="10", id="username"></input>
-        </div>
-
-        <div class="form-group">
-          <input type="submit" class="btn btn-primary pull-right" />
+        <div class="ui form">
+          <div class="field">
+            <label>Name:</label>
+            <input type="text" name="name"></input>
+          </div>
+          <div class="field">
+            <label>Email:</label>
+            <input type="text" name="email"></input>
+          </div>
+          <button class="ui primary button">
+            Save
+          </button>
         </div>
       </form>
     </div>
-    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/semantic.min.js"></script>
   </body>
 </html>
