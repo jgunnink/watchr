@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <div class="page-title">
+        <h1>HR Monitoring Registration</h1>
+        <p class="lead">Create your account and get notified!</p>
+        <hr />
+      </div>
+
+      <form action="/register" method="POST">
+        <div class="form-group">
+          <label for="username">Enter your name:</label>
+          <input class="form-control" name="user" cols="30" rows="10", id="username"></input>
+        </div>
+
+        <div class="form-group">
+          <input type="submit" class="btn btn-primary pull-right" />
+        </div>
+      </form>
+    </div>
+    <script src="/js/bootstrap.min.js"></script>
+  </body>
+</html>
