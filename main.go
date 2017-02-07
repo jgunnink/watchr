@@ -8,9 +8,10 @@ import (
 func main() {
 	http.HandleFunc("/register", Register)
 	http.Handle("/", http.FileServer(http.Dir("public")))
-	http.ListenAndServe(":8080", nil)
+	http.ListenAndServe(":8000", nil)
 }
 
+// Register takes the HTTP request and attempts to create a user
 func Register(w http.ResponseWriter, r *http.Request) {
 	r.ParseForm()
 	name := r.FormValue("user")
@@ -23,6 +24,7 @@ func Register(w http.ResponseWriter, r *http.Request) {
 	t.Execute(w, user)
 }
 
+// User is an object containing an email and a name.
 type User struct {
 	Name  string
 	Email string

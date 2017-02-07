@@ -4,24 +4,29 @@
   </head>
   <body>
     <div class="ui container">
-      <div class="page-title">
-        <h1 class="ui header">HR Monitoring Registration</h1>
-        <p>Create your account and get notified!</p>
-        <div class="ui divider"></div>
-      </div>
+      <h1 class="ui header">HR Monitoring Registration</h1>
+      <h4 class="ui dividing header">Create your account and get notified!</h4>
 
       <form action="/register" method="POST">
         <div class="ui form">
-          <div class="field">
-            <label>Name:</label>
-            <input type="text" name="name"></input>
+          <div class="two fields">
+            <div class="field">
+              <label>Name:</label>
+              <input type="text" name="name"></input>
+            </div>
+            <div class="field">
+              <label>Email:</label>
+              <input type="text" name="email"></input>
+            </div>
           </div>
           <div class="field">
-            <label>Email:</label>
-            <input type="text" name="email"></input>
+            <div class="ui checkbox">
+              <input type="checkbox" tabindex="0">
+              <label>I agree to the Terms and Conditions</label>
+            </div>
           </div>
           <button class="ui primary button">
-            Save
+            Register!
           </button>
         </div>
       </form>
