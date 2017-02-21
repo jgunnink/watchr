@@ -3,6 +3,10 @@
 *.a
 *.so
 
+# Database and vendor files
+watchr.db
+/vendor
+
 # Folders
 _obj
 _test

@@ -1,2 +1,5 @@
 package: github.com/jgunnink/watchr
-import: []
+import:
+- package: github.com/julienschmidt/httprouter
+- package: github.com/asdine/storm
+- package: github.com/boltdb/bolt
