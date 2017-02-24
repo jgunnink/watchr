@@ -12,7 +12,9 @@ class App extends Component {
           <div style={{ background: '#fff', padding: 24, minHeight: 280 }}>
             <h1>HR Monitoring Registration</h1>
             <h4>Create your account and get notified!</h4>
-            <RegisterForm />
+            <div style={{ maxWidth: '300px', marginTop: '20px' }}>
+              <RegisterForm />
+            </div>
           </div>
         </Content>
         <Footer style={{ textAlign: 'center' }}>

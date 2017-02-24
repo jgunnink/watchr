@@ -45,6 +45,7 @@ func (s *server) Register(w http.ResponseWriter, r *http.Request) {
 	if err != nil {
 		panic(err)
 	}
+	log.Println("Registered user!")
 	t.Execute(w, user)
 }
 
