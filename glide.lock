@@ -1,5 +1,5 @@
-hash: bff5feca76acd35e79321acf2cb48c5da92473b21f64cf75f49c8bc6f44c7779
-updated: 2017-02-21T16:17:58.917335938+08:00
+hash: 9d2bf4a64adb940c842bbc771c854d224e84ee53ae1797f449638b498e89feb7
+updated: 2017-02-24T11:31:40.2745795+08:00
 imports:
 - name: github.com/asdine/storm
   version: de95a2ead13a0ec4cff5e37d21decd48b54a078f
@@ -20,6 +20,14 @@ imports:
   - utils
 - name: github.com/julienschmidt/httprouter
   version: 8c199fb6259ffc1af525cc3ad52ee60ba8359669
+- name: github.com/rs/cors
+  version: a62a804a8a009876ca59105f7899938a1349f4b3
+- name: github.com/rs/xhandler
+  version: ed27b6fd65218132ee50cd95f38474a3d8a2cd12
+- name: golang.org/x/net
+  version: 236b8f043b920452504e263bc21d354427127473
+  subpackages:
+  - context
 - name: golang.org/x/sys
   version: d75a52659825e75fff6158388dddc6a5b04f9ba5
   subpackages:

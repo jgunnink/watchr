@@ -7,6 +7,7 @@ import (
 
 	"github.com/asdine/storm"
 	"github.com/julienschmidt/httprouter"
+	"github.com/rs/cors"
 )
 
 func main() {
@@ -22,9 +23,14 @@ func main() {
 
 	s.db = db
 	s.router = rtr
+	handler := cors.New(cors.Options{
+		AllowedOrigins: []string{"*"},
+		AllowedHeaders: []string{"X-API"},
+		AllowedMethods: []string{"GET", "PUT", "POST", "DELETE"},
+	}).Handler(s.router)
 
 	// http.Handle("/app", http.FileServer(http.Dir("public")))
-	http.ListenAndServe(":8000", s.router)
+	http.ListenAndServe(":8000", handler)
 }
 
 // Register takes the HTTP request and attempts to create a user

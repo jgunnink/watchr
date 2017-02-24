@@ -3,3 +3,5 @@ import:
 - package: github.com/julienschmidt/httprouter
 - package: github.com/asdine/storm
 - package: github.com/boltdb/bolt
+- package: github.com/rs/cors
+  version: v1.0
