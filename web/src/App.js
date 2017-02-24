@@ -1,3 +1,4 @@
+import axios from 'axios';
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
@@ -14,7 +15,8 @@ class App extends Component {
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
         <button onClick={()=>{
-          console.log("Hi John")}
+          console.log("Hi John")
+          axios.post('http://10.254.25.90:8000/register/').then((r) => {console.log(r.data)})}
         }>
         Hello</button>
       </div>
