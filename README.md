@@ -11,7 +11,20 @@ Further reading:
 - https://www.newscientist.com/article/2117854-smartwatches-know-youre-getting-a-cold-days-before-you-feel-ill
 
 ## Getting started
-- TBA
+
+### Spinup:
+Before proceeding, ensure you have yarn and glide installed.
+In one terminal window:
+```bash
+cd web
+yarn install
+yarn start
+```
+Next window:
+```bash
+glide install
+realize run
+```
 
 ## Usage
 - TBA
